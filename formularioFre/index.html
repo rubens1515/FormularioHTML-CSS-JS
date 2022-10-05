@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Formulário Freelancer</title>
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Formulário de Freelancer</legend>
+        <label for="nome">Nome:<em>*</em></label> <br>
+        <input type="text" id="nome" name="Nome" placeholder="Digite seu Nome" required>
+        <br>
+        <label for="Sobrenome">Sobrenome:<em>*</em></label>
+        <input type="text" id="sobrenome" name="Sobrenome" placeholder="Digite seu Sobrenome" required>
+        <br>
+        <label for="email">Email:<em>*</em></label>
+        <input type="email" id="email" name="E-mail" placeholder="Digite seu E-mail" required>
+        <br>
+        <label for="Mensagem">Mensagem:<em>*</em></label>
+        <textarea id="mensagem" name="Mensagem" rows="5" cols="35" placeholder="Informe o que Deseja" ></textarea>
+        <br>
+        <label for="lingua">Lingua:</label>
+        <select id="linguas">
+            <option value="portugues">Português</option>
+            <option value="ingles">Inglês</option>
+            <option value="espanhol">Espanhol</option>
+            <option value="frances">Francês</option>
+        </select>
+        <br>
+        <label for="arquivo">Protótipo(Requisitos):</label>
+        <input type="file" name="arquivos"> 
+        <br>
+        <label for="email">Data Prevista Entrega:<em>*</em></label>
+        <input type="datetime" id="Data" name="dd/mm/aaaa" placeholder="dd/mm/aaaa" required>
+        <br>
+        <label for="bancodedados" id="bancodados" name="Banco de Dados">Banco de Dados: </label>
+        <input type="radio" name="bancodeDados" value="mySql">MySql 
+        <input type="radio" name="bancodeDados" value="postergree">PostgreSQL
+        <input type="radio" name="bancodeDados" value="mongodb"> MongoDB 
+        <input type="radio" name="bancodeDados" value="n/a">N/A
+        <input type="radio" name="bancodeDados" value="outro">Outra 
+        <br>
+        <label for="TurnoReunioes" id="turnoreunioes" name="Turno Para Reuniao">Turno Para Reuniões:<em>*</em></label>
+        <input type="checkbox" name="turno" id="turnoM" value="manhã">
+        <label for="turnoM">Manhã |</label>
+        <input type="checkbox" name="turno" id="turnoT" value="tarde">
+        <label for="turnoT">Tarde |</label>
+        <input type="checkbox" name="turno" id="turnoN" value="noite">
+        <label for="turnoN">Noite</label>
+        <br>
+        <label for="horario">Horário Sugerido:</label>
+        <input type="time" name="usr_horario">
+        <br>
+        
+        <input type="submit" value="Enviar">
+        <br>
+        <input type="submit" value="Limpar">
+    </fieldset>
+
+</body>
+</html>
